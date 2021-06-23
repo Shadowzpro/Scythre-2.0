@@ -57,8 +57,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Player_Movement.cs" />
-    <Compile Include="Assets\Scripts\Enemy_Script.cs" />
     <Compile Include="Assets\Scripts\Pause_Script.cs" />
+    <Compile Include="Assets\Scripts\Enemy_Script.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
