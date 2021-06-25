@@ -24,8 +24,9 @@ public class Enemy_Script : MonoBehaviour
     private bool tracking_player_test;
 
     public GameObject Player;
+    public GameObject playerscripts;
 
-    public GameObject Detected;
+  //  public GameObject Detected;
 
 
 
@@ -54,7 +55,7 @@ public class Enemy_Script : MonoBehaviour
         {
             Chase();
             tracking_player_test = true;
-            Detected.SetActive(true);
+       //     Detected.SetActive(true);
         }
     }
     void patrol()
@@ -63,7 +64,7 @@ public class Enemy_Script : MonoBehaviour
         {
             NMA.destination = currentNode.transform.position;
             chase_time = 0;
-            Detected.SetActive(false);
+        //    Detected.SetActive(false);
             tracking_player_test = false;
         }
 
@@ -128,7 +129,7 @@ public class Enemy_Script : MonoBehaviour
                 {
                     if (hit.collider.name == "Player")
                     {
-                        if (Player.GetComponent<Player_Movement>().isDead == false)
+                        if (playerscripts.GetComponent<Player_Movement>().isDead == false)
                         {
                             Debug.Log("it works");
                             Player_found = true;
